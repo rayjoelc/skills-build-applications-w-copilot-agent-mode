@@ -13,6 +13,7 @@
       "type": "python",
       "request": "launch",
       "program": "${workspaceFolder}/octofit-tracker/backend/manage.py",
+      "cwd": "${workspaceFolder}/octofit-tracker/backend",
       "args": [
         "runserver",
         "0.0.0.0:8000"
@@ -21,7 +22,8 @@
       "justMyCode": true,
       "python": "${workspaceFolder}/octofit-tracker/backend/venv/bin/python",
       "env": {
-        "PYTHONPATH": "${workspaceFolder}/octofit-tracker/backend/venv/bin/python",
+        "PYTHONPATH": "${workspaceFolder}/octofit-tracker/backend",
+        "DJANGO_SETTINGS_MODULE": "octofit_tracker.settings",
         "VIRTUAL_ENV": "${workspaceFolder}/octofit-tracker/backend/venv",
         "PATH": "${workspaceFolder}/octofit-tracker/backend/venv/bin:${env:PATH}"
       }
